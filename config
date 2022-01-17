@@ -249,7 +249,7 @@ exec --no-startup-id brightshift 0.0
 
 # COLORS
 # class                 border  backgr. text    indicator child_border
-client.focused          #000000 #285577 #ffffff #2e9ef4   #f55800
+client.focused          #000000 #f55800 #ffffff #f55800   #f55800
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 
 # split in horizontal orientationxicons"
@@ -291,4 +291,4 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-flashback
 
 # Remove borders, titles
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
