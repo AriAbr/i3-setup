@@ -270,8 +270,8 @@ bindsym --release Print exec "flameshot gui"
 # peek
 bindsym $mod+Print exec peek
 
-# Set default display layout
-exec_always --no-startup-id ~/.screenlayout/gabash_H-H.sh
+# Set default display layout (now doing this in session properties)
+# exec_always --no-startup-id ~/.screenlayout/gabash_H-H.sh
 
 # Lenovo keyboard middle button setup
 exec_always "xinput set-button-map 'TrackPoint Keyboard II Mouse' 1 0 3"
