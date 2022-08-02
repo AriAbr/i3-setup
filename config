@@ -124,6 +124,7 @@ workspace $wspChrome output eDP-1
 set $wspTeams "💬 T"
 # exec_always teams
 assign [class="Teams"] $wspTeams
+assign [class="teams-for-linux"] $wspTeams
 workspace $wspTeams output eDP-1
 
 # Spotify startup
