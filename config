@@ -245,8 +245,8 @@ bindsym $mod+Shift+v exec ~/.config/i3/toggle-audio-output.sh
 
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "light -A 10 && $refreshi3bar"
-bindsym XF86MonBrightnessDown exec "light -U 10 && $refreshi3bar"
+# bindsym XF86MonBrightnessUp exec "light -A 10 && $refreshi3bar"
+# bindsym XF86MonBrightnessDown exec "light -U 10 && $refreshi3bar"
 exec --no-startup-id brightshift 0.0
 
 # COLORS
