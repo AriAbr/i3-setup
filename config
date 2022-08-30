@@ -44,7 +44,7 @@ bindsym $mod+Tab exec "rofi -show combi -show-icons -display-combi 'Open or Run'
 bindsym $mod+m exec ~/.config/i3/toggle-display.sh
 
 # set background images
-exec feh --randomize --bg-fill ~/Pictures/background_images/*
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/background_images/*
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
