@@ -294,3 +294,6 @@ exec --no-startup-id gnome-flashback
 
 # Remove borders, titles
 for_window [class=".*"] border pixel 1
+
+# picom
+exec_always --no-startup-id picom --config ./picom.conf &
