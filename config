@@ -290,7 +290,7 @@ exec --no-startup-id gnome-flashback
 for_window [class=".*"] border pixel 1
 
 # picom
-exec_always --no-startup-id picom --config ./picom.conf &
+exec_always --no-startup-id picom --config ~/.config/i3/picom.conf &
 
 # shutdown mode
 set $shutdown_mode "Exit: [l]ogout, [r]eboot, [s]hutdown, slee[p], loc[k], [h]ibernate"
