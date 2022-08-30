@@ -210,7 +210,7 @@ bar {
     id bar-1
 # height 25
         workspace_buttons yes
-        position top
+        position bottom
         # font pango:DejaVu Sans Mono 14
         font pango:Source Code Pro Medium 11, FontAwesome 11
         separator_symbol "|"
