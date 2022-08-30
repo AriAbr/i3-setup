@@ -12,7 +12,7 @@
 set $mod Mod4
 set $alt Mod1
 set $refreshi3bar killall i3bar; i3bar --bar_id=bar-1 &
-set $focus_color #629bfc
+set $fo_col #629bfc # Focus color. Keep to 7 characters to line up with hex colors
 for_window [instance="libreoffice"] border normal
 for_window [instance="peek"] floating enable
 
@@ -218,9 +218,9 @@ bar {
         colors {
             background #2e3440
                 statusline #88c0d0
-                separator $focus_color
+                separator $fo_col
 #                  border  backgr. text
-                focused_workspace  $focus_color $focus_color #252d3c
+                focused_workspace  $fo_col $fo_col #252d3c
                 active_workspace   #2e3440 #5f676a #ffffff
                 inactive_workspace #2e3440 #2e3440 #88c0d0
                 urgent_workspace   #5e81ac #bf616a #ffffff
@@ -252,7 +252,7 @@ exec --no-startup-id brightshift 0.0
 
 # COLORS
 # class                 border  backgr. text    indicator child_border
-client.focused          #000000 #2b78fd #ffffff $focus_color   $focus_color
+client.focused          #000000 #2b78fd #ffffff $fo_col   $fo_col
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 
 # split in horizontal orientationxicons"
