@@ -124,19 +124,21 @@ set $wsp8 "8"
 set $wsp9 "9"
 set $wsp0 "0"
 
-# Chrome startup
-set $wspChrome "🌎 I"
-# exec_always google-chrome
-assign [class="Google-chrome" title="google-chrome"] $wspChrome
-workspace $wspChrome output eDP-1
-
 # Teams startup
+# Before Chrome to override Chrome workspace assignment
 set $wspTeams "💬 T"
 # exec_always teams
 assign [class="Teams"] $wspTeams
 assign [class="teams-for-linux"] $wspTeams
-assign [class="Google-chrome" title="teams.microsoft.com"] $wspTeams
+assign [title="teams.microsoft.com"] $wspTeams
 workspace $wspTeams output eDP-1
+
+# Chrome startup
+set $wspChrome "🌎 I"
+# exec_always google-chrome
+# assign [class="Google-chrome" title="google-chrome"] $wspChrome
+assign [class="Google-chrome"] $wspChrome
+workspace $wspChrome output eDP-1
 
 # Spotify startup
 set $wspSpotify "🎧 S"
