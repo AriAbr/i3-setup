@@ -42,7 +42,13 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Tab exec "rofi -show combi -show-icons -display-combi 'Open or Run'"
 
 # toggle screenlayout
-bindsym $mod+m exec ~/.config/i3/toggle-display.sh
+# bindsym $mod+m exec "autorandr --change"
+bindsym $mod+Shift+m exec ~/.config/i3/toggle-display.sh
+
+# set default screenlayout
+# bug: on startup, right external monitor duplicates the laptop screen.
+# exec --no-startup-id "~/.screenlayout/gabash_H_H.sh"
+# exec --no-startup-id "autorandr --change"
 
 # set background images
 set $bg_left     ~/.config/i3/backgrounds/smoky3.jpg
@@ -121,7 +127,7 @@ set $wsp0 "0"
 # Chrome startup
 set $wspChrome "🌎 I"
 # exec_always google-chrome
-assign [class="Google-chrome"] $wspChrome
+assign [class="Google-chrome" title="google-chrome"] $wspChrome
 workspace $wspChrome output eDP-1
 
 # Teams startup
@@ -129,6 +135,7 @@ set $wspTeams "💬 T"
 # exec_always teams
 assign [class="Teams"] $wspTeams
 assign [class="teams-for-linux"] $wspTeams
+assign [class="Google-chrome" title="teams.microsoft.com"] $wspTeams
 workspace $wspTeams output eDP-1
 
 # Spotify startup
