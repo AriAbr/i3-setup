@@ -240,13 +240,13 @@ bar {
         }
 }
 
-# Multimedia Keys, only work with rhythmbox right now
-# increase volume
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-# decrease volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-# mute volume
-bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
+# # Multimedia Keys, don't need this with i3-gnome
+# # increase volume
+# bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+# # decrease volume
+# bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+# # mute volume
+# bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
 
 # toggle audio output
 bindsym $mod+Shift+v exec ~/.config/i3/toggle-audio-output.sh
