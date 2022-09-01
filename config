@@ -259,18 +259,6 @@ exec --no-startup-id brightshift 0.0
 client.focused          #000000 #2b78fd #ffffff $fo_col   $fo_col
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 
-# split in horizontal orientationxicons"
-
-# exec_always "~/.local/bin/i3expod.py"
-
-# # i3expo-ng
-# bindsym $mod+grave exec --no-startup-id "killall -s SIGUSR1 i3expod.py"
-
-# exec_always "~/.local/bin/i3expod.py -f -w /home/user/Images/wallpapers/14.jpg"
-
-#i3lock
-bindsym $mod+l exec i3lock
-
 # screenshot (using flameshot)
 bindsym --release Print exec "flameshot gui"
 
