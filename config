@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Tab exec "rofi -show combi -show-icons -display-combi 'Open or Run'"
 
 # toggle screenlayout
-# bindsym $mod+m exec "autorandr --change"
+bindsym $mod+m exec "autorandr --change"
 bindsym $mod+Shift+m exec ~/.config/i3/toggle-display.sh
 
 # set default screenlayout
