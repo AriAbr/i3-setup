@@ -41,6 +41,9 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec dmenu_run -l 15
 bindsym $mod+Tab exec "rofi -show combi -show-icons -display-combi 'Open or Run'"
 
+# set screenlayout
+exec_always --no-startup-id "autorandr --change"
+
 # toggle screenlayout
 bindsym $mod+m exec "autorandr --change"
 bindsym $mod+Shift+m exec ~/.config/i3/toggle-display.sh
