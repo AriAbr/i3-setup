@@ -127,13 +127,14 @@ set $wsp8 "8"
 set $wsp9 "9"
 set $wsp0 "0"
 
-# Teams startup
+# Teams, ferdi startup
 # Before Chrome to override Chrome workspace assignment
 set $wspTeams "💬 T"
 # exec_always teams
 assign [class="Teams"] $wspTeams
 assign [class="teams-for-linux"] $wspTeams
 assign [title="teams.microsoft.com"] $wspTeams
+assign [title="Ferdi"] $wspTeams
 workspace $wspTeams output eDP-1
 
 # Chrome startup
