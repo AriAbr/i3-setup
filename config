@@ -16,6 +16,7 @@ set $refreshi3bar killall i3bar; i3bar --bar_id=bar-1 &
 set $fo_col #629bfc
 for_window [instance="libreoffice"] border normal
 for_window [instance="peek"] floating enable
+for_window [class="Yad"] floating enable
 
 # set_from_resource $bg           i3wm.color3
 # set_from_resource $bg-alt       i3wm.color0
@@ -149,6 +150,8 @@ set $wspSpotify "🎧 S"
 for_window [class="Spotify"] move to workspace $wspSpotify # assign doesn't work for Spotify. Not sure why...
 workspace $wspSpotify output eDP-1
 
+# TIDE punch
+exec --no-startup-id /home/ari/.config/i3/tide_punch
 
 # switch to workspace
 bindsym $mod+1 workspace $wsp1
