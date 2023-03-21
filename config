@@ -39,7 +39,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run -l 15
-bindsym $mod+Tab exec "rofi -show combi -show-icons -display-combi 'Open or Run'"
+bindsym $mod+Tab exec $(rofi -run-list-command ". ~/.config/i3/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -show combi -show-icons -display-combi 'Open or Run')
 
 # set screenlayout
 exec_always --no-startup-id "autorandr --change"
