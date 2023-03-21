@@ -189,7 +189,7 @@ bindsym $mod+Shift+Ctrl+Right move workspace to output right
 bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+plus scratchpad show
 
 
 # reload the configuration file
