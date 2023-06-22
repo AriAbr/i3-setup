@@ -293,6 +293,9 @@ bindsym Mod1+Tab exec ~/.config/i3/toggle-language.sh
 # GNOME Settings Daemon
 exec --no-startup-id /usr/lib/gsd-xsettings
 
+# system76-power
+exec --no-startup-id system76-power profile battery
+
 # GNOME power manager
 exec_always --no-startup-id gnome-power-manager
 # polkit-gnome - Starts authentication-agent needed to get sudo password check aviable for GUIs needing it.
