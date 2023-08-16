@@ -129,7 +129,7 @@ set $wsp9 "9"
 set $wsp0 "0"
 
 # Teams, ferdi startup
-# Before Chrome to override Chrome workspace assignment
+# Before browser to override browser workspace assignment
 set $wspTeams "💬 T"
 # exec_always teams
 assign [class="Teams"] $wspTeams
@@ -138,12 +138,11 @@ assign [title="teams.microsoft.com"] $wspTeams
 assign [title="Ferdi"] $wspTeams
 workspace $wspTeams output eDP-1
 
-# Chrome startup
-set $wspChrome "🌎 I"
-# exec_always google-chrome
-# assign [class="Google-chrome" title="google-chrome"] $wspChrome
-assign [class="Google-chrome"] $wspChrome
-workspace $wspChrome output eDP-1
+# Browser startup
+set $wspBrowser "🌎 I"
+assign [class="Brave-browser"] $wspBrowser
+assign [class="Google-chrome"] $wspBrowser
+workspace $wspBrowser output eDP-1
 
 # Spotify startup
 set $wspSpotify "🎧 S"
@@ -164,7 +163,7 @@ bindsym $mod+7 workspace $wsp7
 bindsym $mod+8 workspace $wsp8
 bindsym $mod+9 workspace $wsp9
 bindsym $mod+0 workspace $wsp0
-bindsym $mod+Control+i workspace $wspChrome
+bindsym $mod+Control+i workspace $wspBrowser
 bindsym $mod+Control+t workspace $wspTeams
 bindsym $mod+Control+s workspace $wspSpotify
 
@@ -180,7 +179,7 @@ bindsym $mod+Shift+7 move container to workspace $wsp7
 bindsym $mod+Shift+8 move container to workspace $wsp8
 bindsym $mod+Shift+9 move container to workspace $wsp9
 bindsym $mod+Shift+0 move container to workspace $wsp0
-bindsym $mod+Shift+Control+i move container to workspace $wspChrome
+bindsym $mod+Shift+Control+i move container to workspace $wspBrowser
 bindsym $mod+Shift+Control+t move container to workspace $wspTeams
 bindsym $mod+Shift+Control+s move container to workspace $wspSpotify
 
@@ -273,7 +272,7 @@ bindsym $mod+Shift+v exec ~/.config/i3/toggle-audio-output.sh
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "light -A 10 && $refreshi3bar"
 # bindsym XF86MonBrightnessDown exec "light -U 10 && $refreshi3bar"
-exec --no-startup-id brightshift 0.0
+# exec --no-startup-id brightshift 0.0
 
 # COLORS
 # class                 border  backgr. text    indicator child_border
@@ -295,6 +294,7 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 
 # system76-power
 exec --no-startup-id system76-power profile battery
+exec_always --no-startup-id xrandr --output eDP-1 --brightness 1
 
 # GNOME power manager
 exec_always --no-startup-id gnome-power-manager
