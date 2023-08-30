@@ -294,7 +294,7 @@ exec --no-startup-id /usr/lib/gsd-xsettings
 
 # system76-power
 exec --no-startup-id system76-power profile battery
-exec_always --no-startup-id xrandr --output eDP-1 --brightness 1
+exec_always --no-startup-id ~/.config/i3/set-brightness.sh
 
 # GNOME power manager
 exec_always --no-startup-id gnome-power-manager
